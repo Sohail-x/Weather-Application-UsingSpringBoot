@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/weather/forecast";
+const API_URL = "https://creative-creativity-production-9e38.up.railway.app/weather/forecast";
 
 // DOM elements
 const cityInput = document.getElementById("cityInput");
