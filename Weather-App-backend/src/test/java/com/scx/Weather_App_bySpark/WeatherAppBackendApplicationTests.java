@@ -1,10 +1,10 @@
-package com.scx.Weather_App_bySpark;
+package com.scx.Weather_App_backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WeatherAppBySparkApplicationTests {
+class WeatherAppBackendApplicationTests {
 
 	@Test
 	void contextLoads() {
