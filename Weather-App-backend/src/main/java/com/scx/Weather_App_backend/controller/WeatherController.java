@@ -1,4 +1,4 @@
-package com.scx.Weather_App_bySpark.controller;
+package com.scx.Weather_App_backend.controller;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.scx.Weather_App_bySpark.dto.WeatherForeCastResponce;
-import com.scx.Weather_App_bySpark.dto.WeatherResponce;
-import com.scx.Weather_App_bySpark.service.WeatherService;
+import com.scx.Weather_App_backend.dto.WeatherForeCastResponce;
+import com.scx.Weather_App_backend.dto.WeatherResponce;
+import com.scx.Weather_App_backend.service.WeatherService;
 
 @RestController 
 @CrossOrigin (origins = "*")

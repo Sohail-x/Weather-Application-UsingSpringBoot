@@ -1,4 +1,4 @@
-package com.scx.Weather_App_bySpark.service;
+package com.scx.Weather_App_backend.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,12 +7,12 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import com.scx.Weather_App_bySpark.dto.DayTemp;
-import com.scx.Weather_App_bySpark.dto.Forecast;
-import com.scx.Weather_App_bySpark.dto.Forecastday;
-import com.scx.Weather_App_bySpark.dto.Root;
-import com.scx.Weather_App_bySpark.dto.WeatherForeCastResponce;
-import com.scx.Weather_App_bySpark.dto.WeatherResponce;
+import com.scx.Weather_App_backend.dto.DayTemp;
+import com.scx.Weather_App_backend.dto.Forecast;
+import com.scx.Weather_App_backend.dto.Forecastday;
+import com.scx.Weather_App_backend.dto.Root;
+import com.scx.Weather_App_backend.dto.WeatherForeCastResponce;
+import com.scx.Weather_App_backend.dto.WeatherResponce;
 
 @Service 
 public class WeatherService {

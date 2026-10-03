@@ -9,6 +9,16 @@
             "projectName": "Weather-App-bySpark",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-WeatherAppBySparkApplication<Weather-App-bySpark>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.scx.Weather_App_backend.WeatherAppBySparkApplication",
+            "projectName": "Weather-App-bySpark",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
