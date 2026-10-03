@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherly | Weather Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <div class="background-circle circle-one"></div>
+    <div class="background-circle circle-two"></div>
+
+    <header class="header">
+        <div class="logo">
+            <div class="logo-icon">☁️</div>
+            <span>WeatherlyBySohail</span>
+        </div>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Search city..." value="Jamuria">
+                <button id="searchBtn" aria-label="Search">🔍</button>
+            </div>
+
+            <select id="daysSelect" aria-label="Forecast days">
+                <option value="3">3 Days</option>
+                <option value="5">5 Days</option>
+                <option value="7" selected>7 Days</option>
+                <option value="10">10 Days</option>
+                <option value="14">14 Days</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Fetching weather...</p>
+        </div>
+
+        <div id="errorMessage" class="error hidden">
+            <span>⚠️</span>
+            <p id="errorText">Unable to fetch weather data.</p>
+        </div>
+
+        <section class="current-weather">
+            <div class="location-info">
+                <p class="small-label">CURRENT WEATHER</p>
+                <h1 id="cityName">Jamuria</h1>
+                <p id="locationDetails">West Bengal, India</p>
+
+                <p class="local-time">
+                    🕐 <span id="localTime">--</span>
+                </p>
+            </div>
+
+            <div class="temperature-area">
+                <div id="weatherIcon" class="weather-icon">☀️</div>
+
+                <div>
+                    <div class="temperature">
+                        <span id="currentTemp">--</span>
+                        <span class="degree">°C</span>
+                    </div>
+                    <p id="weatherText">--</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <div class="stat-icon humidity-icon">💧</div>
+                <div>
+                    <p>Humidity</p>
+                    <h3><span id="humidity">--</span>%</h3>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon wind-icon">💨</div>
+                <div>
+                    <p>Wind Speed</p>
+                    <h3><span id="wind">--</span> <small>km/h</small></h3>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon condition-icon">🌤️</div>
+                <div>
+                    <p>Condition</p>
+                    <h3 id="condition">--</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="forecast-section">
+            <div class="section-heading">
+                <div>
+                    <p class="small-label">WEATHER FORECAST</p>
+                    <h2 id="forecastTitle">Forecast</h2>
+                </div>
+
+                <div class="forecast-badge" id="forecastBadge">
+                    📅 7 Days
+                </div>
+            </div>
+
+            <div id="forecastContainer" class="forecast-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Weather data powered by your Spring Boot API ☁️</p>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
