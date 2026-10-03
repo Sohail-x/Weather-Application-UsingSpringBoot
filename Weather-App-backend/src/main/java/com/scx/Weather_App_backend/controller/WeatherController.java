@@ -27,7 +27,7 @@ public class WeatherController {
         return service.getData(city);
     }
 
-    @GetMapping ("/forecast")
+    @RequestMapping ("/forecast")
     public WeatherForeCastResponce getForeCast(@RequestParam String city, @RequestParam int days){
         return service.getForeCastData(city,days);
     }
